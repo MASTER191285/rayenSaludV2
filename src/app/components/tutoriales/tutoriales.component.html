@@ -1,0 +1,15 @@
+<div class="container">  
+  <div class="col">
+    <div class="form-group row">
+      <ng-container *ngFor = "let tutorial of tutoriales">
+        <div class="col-6 col-md-8 mb-3">          
+          <p>{{tutorial.nombre}}</p>
+          <p>{{tutorial.profesor}}</p>
+        </div>	
+        <div class="col-6 col-md-4 mb-3">          
+          {{tutorial.fecha | date:'longDate'}}
+        </div>	
+      </ng-container>
+    </div>
+  </div>
+</div>
